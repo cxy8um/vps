@@ -169,13 +169,40 @@ Click the Request payment button, and copy the address.
 
 Now go to the ‘Send' tab, paste the copied address, and send *exactly* 10,000 PHR to it in a single transaction. This is the collateral transaction that will be locked and paired with your new masternode. If you are setting up more than one masternode at a time, repeat this process for each one.
 
-*You must wait for at least one confirmation (approx. 1 minute) on the blockchain before moving on to the next step!
+*You must wait for at least one confirmation (approx. 1 minute) on the blockchain before moving on to the next step!*
 
 ![alt text](https://i.imgur.com/g00xJTC.png "Logo Title Text 1")
 
 ### Step 2 - Local Masternode Setup
 
-Go to the **[Tools > Debug Console]** and enter these commands below:
+After waiting for at least one confirmation on the collateral transaction we just created, select the 'Masternodes' tab and click on the 'Add Masternode' button.
+
+![alt text](https://i.imgur.com/QHECool.png "Logo Title Text 1")
+
+Under ‘Alias Name’ enter the name of your Masternode (in my case it is ‘Phore-MN-1’). Then click both ‘Autofill Privkey’ and ‘Autofill Outputs’; this will automatically fill the ‘Priv Key’, ‘Output’ and ‘Output ID’ fields.
+
+![alt text](https://i.imgur.com/7EQ19Fh.png "Logo Title Text 1")
+
+The ‘VPS IP’ field will be blank, we will get to that in a moment.
+
+## End of installations
+
+When the script finishes, it will look similar to this:
+
+![alt text](https://i.imgur.com/FipCs5R.png "Logo Title Text 1")
+
+You only have a few steps remaining to complete your Masternode configuration.
+
+## Configure Masternode Configuration Files
+
+Since this installation method supports multiple masternodes, the Phore configuration files have a node number added to them (e.g., phore_n1.conf, phore_n2.conf), stored in the /etc/masternodes directory. If you have a single masternode on the VPS, you will only need to edit /etc/masternodes/phore_n1.conf.
+
+To open phore_n1.conf for editing, enter these commands:
+
+```sudo apt-get install nano```
+```nano /etc/masternodes/phore_n1.conf```
+
+You will see something similar to this:
 
 ```bash
 masternode genkey
