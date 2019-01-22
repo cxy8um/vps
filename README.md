@@ -198,6 +198,7 @@ Since this installation method supports multiple masternodes, the Phore configur
 To open phore_n1.conf for editing, enter these commands:
 
 ```sudo apt-get install nano```
+
 ```nano /etc/masternodes/phore_n1.conf```
 
 You will see something similar to this:
