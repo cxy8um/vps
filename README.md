@@ -167,11 +167,14 @@ Click the Request payment button, and copy the address.
 
 ![alt text](https://i.imgur.com/L3Ka6cg.png "Logo Title Text 1")
 
-Now go to the Send tab, paste the copied address, and send *exactly* 10,000 PHR to it in a single transaction. Wait for it to confirm on the blockchain. This is the collateral transaction that will be locked and paired with your new masternode. If you are setting up more than one masternode at one time, repeat this process for each one.
+Now go to the ‘Send' tab, paste the copied address, and send *exactly* 10,000 PHR to it in a single transaction. This is the collateral transaction that will be locked and paired with your new masternode. If you are setting up more than one masternode at a time, repeat this process for each one.
 
-<img src="docs/images/masternode_vps/step1-send10kphr.png" alt="sending 10kPHR" class="inline"/>
+*You must wait for at least one confirmation (approx. 1 minute) on the blockchain before moving on to the next step!
 
-### Step 2 - Generate Masternode Private Key
+![alt text](https://i.imgur.com/g00xJTC.png "Logo Title Text 1")
+
+### Step 2 - Local Masternode Setup
+
 Go to the **[Tools > Debug Console]** and enter these commands below:
 
 ```bash
