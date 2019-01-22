@@ -240,9 +240,21 @@ Since this installation method supports multiple masternodes, the phore configur
 
 To open phore_n1.conf for editing, enter these commands:
 ```bash
-sudo apt-get install nano
+sudo apt-get install nano```
+
+```bash
 nano /etc/masternodes/phore_n1.conf
 ```
+
+You will see something similar to this:
+
+![alt text](https://i.imgur.com/qxYIvHJ.png "Logo Title Text 1")
+
+Copy the IP from ```bash
+masternodeaddr=``` (highlighted in red in the image above) and paste it into the ‘VPS IP’ field of the local wallet Masternode setup. Every field should now be full. Copy your ‘Priv Key’ (we will need this soon) and click ‘OK’.
+
+
+
 The next step adds your masternode private key.
 
 ## Add masternode private key
