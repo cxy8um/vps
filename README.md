@@ -270,5 +270,35 @@ The output will look like this:
   "relayfee" : 0.00010000,
   "staking status" : "Staking Not Active",
   "errors" : ""
-}```
+}
+```
 
+We're looking at the blocks, and need that to be the latest block in the blockchain. You can check your local wallet to see the latest block by hovering over the green check mark.
+
+![alt text](https://i.imgur.com/xPv4XmT.png "Logo Title Text 1")
+
+Once your masternode has synced up to the latest block, go to next step. The syncing process may take 15-30 minutes, or more, as the Phore Blockchain grows. You can keep checking progress with the command above, by pressing the ‘Up’ arrow and the ‘Enter’ key to repeat it (or by pasting the command in again).
+
+## Start Masternode
+
+When your Masternode is fully synced on the VPS, go back to the ‘Masternode’ tab of the local wallet and click ‘Start Alias’. 
+
+![alt text](https://i.imgur.com/JPPxFcm.png "Logo Title Text 1")
+
+Click ‘Yes’ to start your Masternode.
+
+Once you have done this, you should get a confirmation that the Masternode has started successfully!
+
+![alt text](https://i.imgur.com/C8UkC1i.png "Logo Title Text 1")
+
+The ‘Status’ should now say ‘Enabled’, and within an hour the timer in the ‘Active’ column should start increasing.
+
+Congratulations, your Phore Masternode is now set up and running! Depending on how many masternodes there are, it may take 12-24 hours before you see your first masternode reward. This is normal and rewards should come at more regular intervals after the first one.
+
+## Issues and Questions
+
+Please open a GitHub Issue  here: https://github.com/phoreproject/vps/issues if there are problems with this installation method. Many Phore team members actively support people installing masternodes and can provide assistance in the Phore Discord channel. Here is a Discord invitation:
+
+https://discord.gg/sbgdcdv
+
+If you would like to make a donation to Phore's ongoing development, you can send Phore to the core team at this address: PDjGJMDzvJnvbxxgR1bgPm77fFLxn3KAg8
