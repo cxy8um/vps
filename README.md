@@ -160,11 +160,12 @@ The project is configured to use the latest official release of the Phore master
 
 ## Configure Phore Wallet
 ### Step1 - Create Collateral Transaction
-Once the wallet is open on your local computer, generate a new receive address and label it however you want to identify your masternode rewards (e.g., Phore-MN-1). This label will show up in your transactions each time you receive a block reward.
+Once the wallet is open on your local computer, select the 'Receive' tab and generate a new receive address for the amount of 10,000 PHR. You may label it however you want to identify your masternode rewards (e.g., Phore-MN-1). This label will show up in your transactions each time you receive a block reward.
+
 
 Click the Request payment button, and copy the address.
 
-<img src="docs/images/masternode_vps/step1-newaddress.png" alt="making new address" class="inline"/>
+![alt text](https://i.imgur.com/L3Ka6cg.png "Logo Title Text 1")
 
 Now go to the Send tab, paste the copied address, and send *exactly* 10,000 PHR to it in a single transaction. Wait for it to confirm on the blockchain. This is the collateral transaction that will be locked and paired with your new masternode. If you are setting up more than one masternode at one time, repeat this process for each one.
 
